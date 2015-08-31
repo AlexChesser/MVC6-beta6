@@ -132,7 +132,7 @@ namespace MVC6_beta6.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult LogOff()
         {
-            _signInManager.SignOut();
+            _signInManager.SignOutAsync();
             return RedirectToAction(nameof(HomeController.Index), "Home");
         }
 

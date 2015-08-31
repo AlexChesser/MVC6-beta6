@@ -4,8 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Data.Entity;
 using Microsoft.Data.Entity.Metadata;
-using Microsoft.Data.Entity.Relational.Migrations.Infrastructure;
+using Microsoft.Data.Entity.Migrations.Infrastructure;
 using MVC6_beta6.Models;
+
 
 namespace MVC6_beta6.Migrations
 {
@@ -20,7 +21,7 @@ namespace MVC6_beta6.Migrations
             builder.Entity("Microsoft.AspNet.Identity.EntityFramework.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
-                        .GenerateValueOnAdd()
+                        .ValueGeneratedOnAdd()
                         .Annotation("OriginalValueIndex", 0);
 
                     b.Property<string>("ConcurrencyStamp")
@@ -41,7 +42,7 @@ namespace MVC6_beta6.Migrations
             builder.Entity("Microsoft.AspNet.Identity.EntityFramework.IdentityRoleClaim<string>", b =>
                 {
                     b.Property<int>("Id")
-                        .GenerateValueOnAdd()
+                        .ValueGeneratedOnAdd()
                         .StoreGeneratedPattern(StoreGeneratedPattern.Identity)
                         .Annotation("OriginalValueIndex", 0);
 
@@ -62,7 +63,7 @@ namespace MVC6_beta6.Migrations
             builder.Entity("Microsoft.AspNet.Identity.EntityFramework.IdentityUserClaim<string>", b =>
                 {
                     b.Property<int>("Id")
-                        .GenerateValueOnAdd()
+                        .ValueGeneratedOnAdd()
                         .StoreGeneratedPattern(StoreGeneratedPattern.Identity)
                         .Annotation("OriginalValueIndex", 0);
 
@@ -83,11 +84,11 @@ namespace MVC6_beta6.Migrations
             builder.Entity("Microsoft.AspNet.Identity.EntityFramework.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .GenerateValueOnAdd()
+                        .ValueGeneratedOnAdd()
                         .Annotation("OriginalValueIndex", 0);
 
                     b.Property<string>("ProviderKey")
-                        .GenerateValueOnAdd()
+                        .ValueGeneratedOnAdd()
                         .Annotation("OriginalValueIndex", 1);
 
                     b.Property<string>("ProviderDisplayName")
@@ -117,7 +118,7 @@ namespace MVC6_beta6.Migrations
             builder.Entity("MVC6_beta6.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
-                        .GenerateValueOnAdd()
+                        .ValueGeneratedOnAdd()
                         .Annotation("OriginalValueIndex", 0);
 
                     b.Property<int>("AccessFailedCount")
