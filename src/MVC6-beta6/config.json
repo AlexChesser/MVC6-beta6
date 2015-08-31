@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "MVC6_beta6"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-MVC6_beta6-c4b4d395-b146-410d-b0f0-f347228b0489;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
