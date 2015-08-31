@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Data.Entity;
 using Microsoft.Data.Entity.Migrations.Infrastructure;
+using Microsoft.Data.Entity.Metadata.Builders;
 using MVC6_beta6.Models;
 
 namespace MVC6_beta6.Migrations
@@ -51,7 +52,6 @@ namespace MVC6_beta6.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .StoreGeneratedPattern(StoreGeneratedPattern.Identity)
                         .Annotation("OriginalValueIndex", 0);
 
                     b.Property<string>("ClaimType")
@@ -72,7 +72,6 @@ namespace MVC6_beta6.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .StoreGeneratedPattern(StoreGeneratedPattern.Identity)
                         .Annotation("OriginalValueIndex", 0);
 
                     b.Property<string>("ClaimType")

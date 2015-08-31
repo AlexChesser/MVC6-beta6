@@ -43,7 +43,6 @@ namespace MVC6_beta6.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .StoreGeneratedPattern(StoreGeneratedPattern.Identity)
                         .Annotation("OriginalValueIndex", 0);
 
                     b.Property<string>("ClaimType")
@@ -64,7 +63,6 @@ namespace MVC6_beta6.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .StoreGeneratedPattern(StoreGeneratedPattern.Identity)
                         .Annotation("OriginalValueIndex", 0);
 
                     b.Property<string>("ClaimType")

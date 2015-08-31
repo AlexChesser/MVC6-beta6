@@ -445,7 +445,7 @@ namespace MVC6_beta6.Controllers
             if (!_databaseChecked)
             {
                 _databaseChecked = true;
-                context.Database.AsRelational().ApplyMigrations();
+                context.Database.ApplyMigrations();
             }
         }
 
